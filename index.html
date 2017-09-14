@@ -85,11 +85,57 @@
       
         <p>是一个快速, 简洁且高效的博客框架. 让上百个页面在几秒内瞬间完成渲染. Hexo支持Github Flavored Markdown的所有功能, 甚至可以整合Octopress的大多数插件. 并自己也拥有强大的插件系统.</p>
 <h2 id="hexo组成部分"><a href="#hexo组成部分" class="headerlink" title="hexo组成部分"></a>hexo组成部分</h2><p>1: <a href="">node.js</a><br>2: <a href="">git</a>环境搭建<br>3: hexo环境搭建<br>4: <a href="">gitHub</a>配置<br>5: 博客域名绑定<br>6：Markdown</p>
-<h3 id="第一步node-js搭建"><a href="#第一步node-js搭建" class="headerlink" title="第一步node.js搭建"></a>第一步node.js搭建</h3>
+<h2 id="第一步node-js搭建"><a href="#第一步node-js搭建" class="headerlink" title="第一步node.js搭建"></a>第一步node.js搭建</h2><p>1: <a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x86.msi" target="_blank" rel="external">Windows 32-bit</a><br>2: <a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi" target="_blank" rel="external">Windows 64-bit</a></p>
+<p>根据需求选择不同的安装包进行安装！</p>
+<p>如下图进行安装:<br><img src="/img/node1.jpg" alt="Alt text"></p>
+<p>通过引导进行安装，接下来判断是否安装成功，在cmd中输入如下命名：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1：node -v</div><div class="line">2: npm -v</div></pre></td></tr></table></figure></p>
+<p><img src="/img/node2.png" alt="Alt text"></p>
+<p>如上图能看出安装成功。注意(显示内容与Node.js版本有关)</p>
+<h2 id="第二步本地Git环境搭建"><a href="#第二步本地Git环境搭建" class="headerlink" title="第二步本地Git环境搭建"></a>第二步本地Git环境搭建</h2><p><a href="https://git-scm.com/downloads" target="_blank" rel="external">git</a> 下载<br>根据需求下载适合自己的版本</p>
+<p>接下来安装Git，如下图所示：</p>
+<p>图一<br><img src="/img/git1.jpg" alt="Alt text"></p>
+<p>图二<br><img src="/img/git2.jpg" alt="Alt text"></p>
+<p>图三<br><img src="/img/git3.jpg" alt="Alt text"></p>
+<p>如上图所示git本地安装成功！<br>接下来测试是否安装成功，输入如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1：git --version</div></pre></td></tr></table></figure></p>
+<pre><code>下图所示，表示安装成功，可以进行下一步了，如果不正确，则需要回头检查自己的安装过程
+</code></pre><p>   <img src="/img/git4.png" alt="Alt text"></p>
+<h2 id="第三步Hexo安装"><a href="#第三步Hexo安装" class="headerlink" title="第三步Hexo安装"></a>第三步Hexo安装</h2><p>在本地磁盘创建新文件夹，我是在D盘下创建caiHexo文件夹，如下图通过Git Bash进入所创建文件夹目录：<br><img src="/img/hexo1.png" alt="Alt text"></p>
+<p>进入文件夹输入ru下命令</p>
+<pre><code class="bash">1：npm install hexo-cli -g
+</code></pre>
+<p>看到如下图所示：<br><img src="/img/hexo2.jpg" alt="Alt text"></p>
+<p>等待上一步完成，按顺序输入如下命令：</p>
+<pre><code class="bash">1：npm install hexo --save
+</code></pre>
+<p>等待安装成功,接下来又是到检查是否安装成功的时刻了(激动啊！！)<br>输入如下命令：</p>
+<pre><code class="bash">1：hexo -v
+</code></pre>
+<p>若显示如下图所示内容则表示hexo环境安装成功！<br><img src="/img/hexo3.png" alt="Alt text"></p>
+<h6 id="hexo的相关配置"><a href="#hexo的相关配置" class="headerlink" title="hexo的相关配置"></a>hexo的相关配置</h6><p>1: 初始化Hexo</p>
+<pre><code>接着上面的操作，输入：hexo init
+然后输入：npm install
+</code></pre><p>之后npm将会自动安装你需要的组件，只需要等待npm操作即可。</p>
+<p>2:初步体验hexo</p>
+<pre><code>输入：hexo g
+</code></pre><p>   <img src="/img/hexo4.jpg" alt="Alt text"></p>
+<pre><code>然后输入：hexo s
+</code></pre><p>  通过浏览器访问如下地址就可看到本地博客！</p>
+<pre><code>http://127.0.0.1:4000  如下图所示
+</code></pre><p><img src="/img/hexo5.png" alt="Alt text"></p>
+<p>上面为本地hexo搭建过程，接下来说说怎么把博客放到外网！！！ 哇咔咔</p>
+<h2 id="第四步GitHub"><a href="#第四步GitHub" class="headerlink" title="第四步GitHub"></a>第四步GitHub</h2><pre><code>gitHub是什么，可以去自己私下去查看相关资料，这里就不详细解释，gitHub很强大，在这只是简单介绍gitHub怎样发布博客这一冰山一角
+</code></pre><p>   首先去<a href="https://github.com/" target="_blank" rel="external">官网</a> 注册账号！如图：<br>   <img src="/img/gitHub1.png" alt="Alt text"></p>
+<p>   当账号注册成功后，接下来我们就得创建一个空间，用于放我们播客相关的文件等等。。。。如图<br>   <img src="/img/gitHub2.png" alt="Alt text"></p>
+<p>   在gitHub中我创建了如下所示仓库空间：<br>   <img src="/img/gitHub3.png" alt="Alt text"></p>
+<p>  外网仓库好了接下来我们是不是改放外网博客了！</p>
+<p>  NONONO这个时候我们需要捣鼓一个有效域名，不然你怎么访问，用板砖！ 哇咔咔</p>
+<h2 id="第五步-域名申请"><a href="#第五步-域名申请" class="headerlink" title="第五步 域名申请"></a>第五步 域名申请</h2><pre><code>该申请域名了，不会玩没关系，去阿里云最简单，应为是中文，哇咔咔！ 不会就问 阿里马云巴巴，我这要做甩手掌柜，哇咔咔
+</code></pre><h2 id="第六步-域名绑定以及访问外网博客"><a href="#第六步-域名绑定以及访问外网博客" class="headerlink" title="第六步 域名绑定以及访问外网博客"></a>第六步 域名绑定以及访问外网博客</h2><pre><code>在域名绑定之前我们的做一件重要的事情ssh
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/14/hello-world/" data-id="cj7k71iv1000124u1meqxhup6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/14/hello-world/" data-id="cj7k9ibjz000080u14rtehuab" class="article-share-link">Share</a>
       
       
     </footer>
